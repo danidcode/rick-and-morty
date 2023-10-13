@@ -1,11 +1,11 @@
 import {useQuery} from "@tanstack/react-query";
 import {useEffect, useState} from "react";
-import {Character} from "../../interfaces/character";
+import {Character} from "../interfaces/character";
 import axios from "axios";
-import CharactersResponse from "../../interfaces/characters-response";
-import {CharacterStatusKey} from "../../types/character-status";
+import CharactersResponse from "../interfaces/characters-response";
+import {CharacterStatusKey} from "../types/character-status";
 
-export const useCharacter = () => {
+export const useCharacters = () => {
   const [filter, setFilter] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [characters, setCharacters] = useState<Character[]>([]);

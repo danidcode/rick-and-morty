@@ -1,11 +1,11 @@
 import LoadMoreButton from '../atoms/LoadMoreButton'
-import { useCharacter } from '../hooks/useCharactesr'
+import { useCharacters } from '../../hooks/useCharacters'
 import CharacterCard from '../molecules/CharacterCard'
 import StatusFilter from '../molecules/StatusFilter'
 
 const Catalog = () => {
 
-    const { visibleCharacters: characters, pages, handleLoadMore, currentPage, handleFilter } = useCharacter()
+    const { visibleCharacters: characters, pages, handleLoadMore, currentPage, handleFilter } = useCharacters()
 
     return (
         <div className='flex flex-col space-y-8 items-center'>
